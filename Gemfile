@@ -4,4 +4,3 @@ ruby "2.3.7"
 # Specify your gem's dependencies in speedup_mortgage.gemspec
 gemspec
 
-gem "speedup_mortgage", "~> 0.1.0"
