@@ -1,4 +1,4 @@
-require "speedup_mortgage/version"
+require "./speedup_mortgage/version"
 
 module SpeedupMortgage
   class Error < StandardError; end
@@ -14,11 +14,12 @@ module SpeedupMortgage
 		loan = Float(loan)
 		
 		print "please enter your INTEREST RATE: "
-		rate = Float(gets.chomp)
+		rate = gets.chomp
 		while rate.nil? || rate.empty?
 			print "please enter your INTEREST RATE: "
 			rate = gets.chomp
 		end
+		rate = Float(rate)
 		mrate =rate/(100*12.0)
 		
 		print "please enter the LENGTH of the loan IN MONTHS: "
@@ -27,10 +28,10 @@ module SpeedupMortgage
 			print "please enter your LOAN LENGTH IN MONTHS: "
 			length = gets.chomp
 		end
-		length = Float(gets.chomp)
+		length = Float(length)
 		length = length * 12.0
 		
-		print "What is your MONTHLY PAYMENT?: "
+		print "What is your MONTHLY PRINCIPAL AND INTEREST PAYMENT?: "
 		pay = gets.chomp
 		while pay.nil? || pay.empty?
 			print "please enter your MONTHLY PAYMENT: "
