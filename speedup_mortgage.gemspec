@@ -37,6 +37,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   
   spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 13.0"
   spec.post_install_message = "thx.  https://www.github.com/mepyyeti/speedup_mortgage"
 end
